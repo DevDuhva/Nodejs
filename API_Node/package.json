@@ -5,20 +5,20 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-    
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DevDuhva/Nodejs.git"
-    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/DevDuhva/Nodejs/issues"
   },
-  "homepage": "https://github.com/DevDuhva/Nodejs#readme"
-  
+  "homepage": "https://github.com/DevDuhva/Nodejs#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
