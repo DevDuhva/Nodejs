@@ -9,10 +9,10 @@ const socket = io('https://squarewebsocketbackend.onrender.com', {
 
 export default function App() {
 
-  const [nome, setNome] = usestate('');
-  const [entrou, setEntrou] = usestate(false);
-  const [usuarios, setUsuarios] = usestate([]);
-  const [id, setId] = usestate(null);
+  const [nome, setNome] = useState('');
+  const [entrou, setEntrou] = useState(false);
+  const [usuarios, setUsuarios] = useState([]);
+  const [id, setId] = useState(null);
 
   useEffect(() => {
     socket.on('player', (id) => {
@@ -96,12 +96,12 @@ export default function App() {
             }
           </View>
 
-          <View>
+          <View style={styles.controles}>
             <TouchableOpacity onPress={() => movimentar(0, -20)} >
               <Text>Cima</Text>
             </TouchableOpacity>
 
-            <View>
+            <View style={styles.esquerdaDireita}>
                   <TouchableOpacity onPress={() => movimentar(-20, 0)} >
                 <Text>Esquerda</Text>
               </TouchableOpacity>
